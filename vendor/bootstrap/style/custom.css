@@ -1,0 +1,82 @@
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+header {
+    background-color: rgb(85, 202, 50);
+
+}
+
+header h1 {
+    padding-top: 0.4rem;
+    display: flex;
+    font-size: 1.4rem;
+    color: white;
+    align-items: center;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: black
+}
+
+.btn-success {
+    width: 60%;
+    background-color: rgb(85, 202, 50);
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.btn-primary {
+    font-weight: 600;
+    width: 50%;
+    background-color: rgb(85, 202, 50);
+    color: #fff;
+    border-color: #198754;
+}
+
+.btn-primary:hover {
+   background-color: #198754;
+}
+
+.img-fluid {
+    border-radius: 4px;
+}
+
+#floresta-1 {
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.18);
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.18);
+
+
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgb(85, 202, 50);
+    color: white;
+    
+}
+
+#texto-1 {
+    display: flex;
+    align-items: center;
+}
+
