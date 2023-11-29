@@ -124,7 +124,33 @@ $('.nav-modal-open').on('click', function (e) {
  * - checar se o cpf é válido com regex
  */
 
+$(document).ready(function() {
+    $("#submitButton").on("click", function() {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var date = $("#date").val();
+      var hour = $("#hour").val();
+      var zipCode = $("#zipCode").val();
+      var cellPhone = $("#cellPhone").val();
+      var cpf = $("#cpf").val();
 
+      var cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+
+      var isValid = true;
+
+      if (cpf && !cpfRegex.test(cpf)) {
+        alert("Invalid CPF");
+        isValid = false;
+      }
+
+      // You can add additional validation for other fields if needed.
+
+      if (isValid) {
+        alert("Form submitted successfully!");
+        // Here you can submit the form or perform any other desired actions.
+      }
+    });
+  });
 
 function validate(elem) {
     if (elem.val() == '') {
@@ -141,6 +167,9 @@ function validate(elem) {
         elem.removeClass('invalid')
     }
 }
+
+
+
 
 $('body').on('submit', '.modal-body .form', function (e) {
 
@@ -198,6 +227,8 @@ $('body').on('blur', '#cpf', function () {
     validate($(this))
     $(this).mask('000.000.000-00');
 })
+
+
 
 
 

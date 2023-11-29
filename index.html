@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./vendor/jquery-validate/jquery.validate.js">
+    
+    
 
     <link rel="stylesheet" href="./css/style.css">
     <title>Aula - Jquery</title>
@@ -246,7 +250,7 @@
 
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control"
+                <input type="text" name="nome" id="nome" minlength="2" title="Insira seu nome completo" class="form-control"
                     placeholder="Digite seu nome" aria-describedby="helpNome" required>
                 <small id="helpNome" class="text-muted">
                     Digite um nome válido
@@ -255,7 +259,7 @@
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail"
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail"
                     aria-describedby="helpEmail" required>
                 <small id="helpEmail" class="text-muted">
                     Digite um e-mail válido
@@ -264,10 +268,10 @@
 
             <div class="mb-3">
                 <label for="date" class="form-label">Data</label>
-                <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail"
-                    aria-describedby="helpDate" readonly>
+                <input type="text" name="date" id="date" class="form-control" placeholder="Escolha a data"
+                    aria-describedby="helpDate">
                 <small id="helpDate" class="text-muted">
-                    Digite uma data válida
+                    Escolha uma data válida
                 </small>
             </div>
 
